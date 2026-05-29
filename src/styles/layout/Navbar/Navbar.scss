@@ -1,35 +1,43 @@
 .navbar {
   height: 80px;
   background: #fff;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   padding: 0 30px;
-
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  gap: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 
   &__logo {
-    font-size: 24px;
-    font-weight: 700;
-    color: #213f7d;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  &__logo-img {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
   }
 
   &__search {
     display: flex;
+    flex: 1;
+    max-width: 450px;
 
     input {
-      width: 400px;
+      width: 100%;
       padding: 10px;
       border: 1px solid #ddd;
       border-radius: 6px 0 0 6px;
+      min-width: 0;
     }
 
     button {
       background: #39cdcc;
       border: none;
       width: 50px;
+      min-width: 50px;
       color: white;
       border-radius: 0 6px 6px 0;
     }
@@ -39,6 +47,7 @@
     display: flex;
     align-items: center;
     gap: 20px;
+    flex-shrink: 0;
   }
 
   &__profile {
@@ -55,14 +64,51 @@
     font-size: 18px;
     color: #213f7d;
   }
-}
-.navbar__logo {
-  display: flex;
-  align-items: center;
-}
 
-.navbar__logo-img {
-  width: 120px;   // adjust based on Figma (usually 110–140px)
-  height: auto;
-  object-fit: contain;
+  @media (max-width: 900px) {
+    padding: 0 20px;
+
+    &__logo-img {
+      width: 100px;
+    }
+
+    &__search {
+      max-width: 300px;
+    }
+
+    &__right {
+      gap: 14px;
+    }
+  }
+
+  @media (max-width: 650px) {
+    height: auto;
+    min-height: 80px;
+    padding: 15px;
+    flex-wrap: wrap;
+
+    &__search {
+      order: 3;
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+
+    &__right {
+      margin-left: auto;
+    }
+  }
+
+  @media (max-width: 420px) {
+    &__logo-img {
+      width: 90px;
+    }
+
+    &__right {
+      gap: 10px;
+    }
+
+    &__profile span {
+      display: none;
+    }
+  }
 }
