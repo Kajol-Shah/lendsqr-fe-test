@@ -1,0 +1,154 @@
+.login {
+  display: flex;
+  min-height: 100vh;
+  background: #ffffff;
+
+  &__left {
+    flex: 1;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__logo {
+    width: 174px;
+    margin-bottom: 8rem;
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  &__right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0 15px 90px rgba(0, 0, 0, 0.03);
+    padding: 2rem;
+  }
+
+  &__form-container {
+    width: 100%;
+    max-width: 447px;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #213f7d;
+    margin-bottom: 0.5rem;
+  }
+
+  &__subtitle {
+    font-size: 1.25rem;
+    color: #545f7d;
+    margin-bottom: 3.75rem;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  &__input {
+    width: 100%;
+    height: 50px;
+    border: 2px solid rgba(84, 95, 125, 0.15);
+    border-radius: 5px;
+    padding: 0 1rem;
+    font-size: 0.875rem;
+    outline: none;
+
+    &:focus {
+      border-color: #39cdcc;
+    }
+  }
+
+  &__password-wrapper {
+    position: relative;
+  }
+
+  &__show {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    color: #39cdcc;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+  }
+
+  &__forgot {
+    border: none;
+    background: transparent;
+    color: #39cdcc;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    text-align: left;
+  }
+
+  &__button {
+    width: 100%;
+    height: 48px;
+    border: none;
+    border-radius: 8px;
+    background: #39cdcc;
+    color: #ffffff;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  .login {
+    flex-direction: column;
+
+    &__left {
+      padding: 2rem;
+      align-items: center;
+    }
+
+    &__logo {
+      margin-bottom: 3rem;
+      width: 140px;
+    }
+
+    &__image {
+      max-width: 350px;
+    }
+
+    &__right {
+      box-shadow: none;
+      padding: 2rem 1.5rem;
+    }
+
+    &__title {
+      font-size: 2rem;
+    }
+
+    &__subtitle {
+      font-size: 1rem;
+    }
+  }
+}
