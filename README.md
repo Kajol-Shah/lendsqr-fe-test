@@ -8,7 +8,7 @@ It replicates a simplified version of the Lendsqr Admin Dashboard, built using *
 
 ## 🔗 Live Demo
 
-👉 https://your-deployed-link.vercel.app
+👉 https://lendsqr-fe-testdeploy.vercel.app/
 
 ---
 
