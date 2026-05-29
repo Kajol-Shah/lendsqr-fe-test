@@ -1,9 +1,7 @@
+import { Navigate } from "react-router-dom";
+
 const Dashboard = () => {
-  return (
-    <div>
-      <h1>Dashboard</h1>
-    </div>
-  );
+  return <Navigate to="/dashboard/users" replace />;
 };
 
 export default Dashboard;

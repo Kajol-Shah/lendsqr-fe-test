@@ -1,0 +1,68 @@
+.navbar {
+  height: 80px;
+  background: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 30px;
+
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+
+  &__logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #213f7d;
+  }
+
+  &__search {
+    display: flex;
+
+    input {
+      width: 400px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 6px 0 0 6px;
+    }
+
+    button {
+      background: #39cdcc;
+      border: none;
+      width: 50px;
+      color: white;
+      border-radius: 0 6px 6px 0;
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  &__icon {
+    font-size: 18px;
+    color: #213f7d;
+  }
+}
+.navbar__logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__logo-img {
+  width: 120px;   // adjust based on Figma (usually 110–140px)
+  height: auto;
+  object-fit: contain;
+}

@@ -1,0 +1,199 @@
+.userDetails {
+  padding: 30px;
+  background: #f5f7fa;
+}
+
+/* BACK */
+.userDetails__back {
+  font-size: 14px;
+  color: #545f7d;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* HEADER */
+.userDetails__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h2 {
+    font-size: 24px;
+    color: #213f7d;
+  }
+}
+
+.userDetails__actions {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-red {
+  border: 1px solid #e4033b;
+  color: #e4033b;
+  background: transparent;
+  padding: 10px 16px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.btn-green {
+  border: 1px solid #39cdcc;
+  color: #39cdcc;
+  background: transparent;
+  padding: 10px 16px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+/* PROFILE CARD */
+.profileCard {
+  background: #fff;
+  margin-top: 20px;
+  padding: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-radius: 6px;
+}
+
+/* LEFT */
+.profileLeft {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #213f7d;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 28px;
+}
+
+.user-id {
+  font-size: 13px;
+  color: #545f7d;
+}
+
+/* DIVIDER */
+.divider {
+  width: 1px;
+  height: 80px;
+  background: #eee;
+}
+
+/* TIER */
+.profileTier {
+  text-align: center;
+
+  p {
+    font-size: 13px;
+    color: #545f7d;
+    margin-bottom: 6px;
+  }
+}
+
+/* GOLD STARS */
+.stars {
+  color: #e9b200;
+  font-size: 18px;
+}
+
+.stars .inactive {
+  color: #e5e5e5;
+}
+
+/* BALANCE */
+.profileBalance {
+  text-align: center;
+
+  h2 {
+    font-size: 22px;
+    color: #213f7d;
+    margin-bottom: 5px;
+  }
+
+  p {
+    font-size: 13px;
+    color: #545f7d;
+  }
+}
+
+/* TABS */
+.tabs {
+  display: flex;
+  justify-content: space-between;
+
+  background: #fff;
+  margin-top: 20px;
+  padding: 15px 20px;
+
+  border-radius: 6px;
+
+  font-size: 14px;
+  color: #545f7d;
+}
+
+.tabs .active {
+  color: #39cdcc;
+  border-bottom: 2px solid #39cdcc;
+}
+
+/* SECTION */
+.cardSection {
+  background: #fff;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.cardSection h4 {
+  color: #213f7d;
+  margin-bottom: 20px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.grid p {
+  font-size: 12px;
+  color: #545f7d;
+}
+
+.grid h5 {
+  font-size: 14px;
+  color: #213f7d;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .profileCard {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
